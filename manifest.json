@@ -1,6 +1,6 @@
 {
   "name": "EthereumTwitterScamBotBlocker Extensions",
-  "description" : "Ethereum Twitter ScamBot Blocker Extension",
+  "description" : "Ethereum Twitter ScamBot Blocker Extension can mark scam tweets red or just hide them.",
   "author": "Paul Mizel",
   "version": "1.0",
   "icons": { 
