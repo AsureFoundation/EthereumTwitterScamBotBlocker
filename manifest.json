@@ -1,0 +1,32 @@
+{
+  "name": "EthereumTwitterScamBotBlocker Extensions",
+  "description" : "Ethereum Twitter ScamBot Blocker Extension",
+  "author": "Paul Mizel",
+  "version": "1.0",
+  "icons": { 
+  "16": "extension-16x16.png",
+  "48": "extension-48x48.png",
+  "128": "extension-128x128.png" }, 		  
+  "permissions": [
+    "http://twitter.com/","https://twitter.com/","https://github.com/","tabs","activeTab","storage",
+	"http://*/",
+    "https://*/"
+  ],
+  "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
+  "browser_action": {
+    "default_popup": "options.html",
+    "default_icon": "extension-16x16.png"
+  },
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "twitter.json"
+  ],
+  "content_scripts": [
+   {
+     "matches": ["http://www.twitter.com/*",
+                  "https://twitter.com/*"],
+     "js": ["jquery.js", "contentScript.js"],
+     "run_at": "document_end"
+   }
+  ]
+}

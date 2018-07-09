@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Options for Ethereum Twitter ScamBot Blocker Extension</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="options.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">	
+	<style>
+		html,
+		body {
+		  margin: 10px;
+		  height: 380px;
+		  min-height: 380px;
+		  max-height: 380px;
+		  padding: 10px;
+		  width: 600px;
+		}
+		.hidden{
+			display:none;
+		}
+		.footer{
+			position: fixed;
+			bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<img src="extension-48x48.png"/>
+	<h4>Ethereum Twitter ScamBot Blocker Extension</h4>
+	<br/>
+	<b>Want to add a scam user? </b>
+	<br/>
+	Go to <a href="https://github.com/AsureFoundation/EthereumTwitterScamBotBlocker" target="_blank">github</a> and change twitter.json file.
+	<br/>
+	
+	<h5>Action:</h5>
+	<select id="action" class="form-control">
+		<option value="red">Mark scam tweets red</option>
+		<option value="hide">Hide scam tweets</option>
+	</select>	
+	<br />	
+	<div class="alert alert-success saved hidden" id="saved" role="alert">
+	  Options are saved!
+	</div>	
+	<span class="footer">
+	Powered by <a href="https://www.asure.io?s=ce" target="_blank">https://www.asure.io</a>
+	</span>
+	
+	<!--<br />	
+	<button onclick="saveOptions()" class="btn btn-primary btn-block">Save</button>	
+	<br />
+	<button onclick="eraseOptions()" class="btn">Restore default</button>
+	-->
+</body>
+</html>
